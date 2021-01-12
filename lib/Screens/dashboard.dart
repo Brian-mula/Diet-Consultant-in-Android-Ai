@@ -18,7 +18,7 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text('Dashboard'),
+        title: Text('Home Page'),
         centerTitle: true,
         backgroundColor: Colors.green,
         elevation: 0,

@@ -44,124 +44,134 @@ class _WorkoutsState extends State<Workouts> {
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            Row(
-              children: <Widget>[
-                Card(
-                  margin: EdgeInsets.fromLTRB(40, 30, 0, 0),
-                  color: Colors.green,
-                  child: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Column(
-                      children: <Widget>[
-                        Image.asset(
-                          'assets/fullbody.jpg',
-                          width: 100,
-                          height: 100,
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        FlatButton(
-                          child: Text(
-                            'Full Body',
-                            style: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: Colors.white,
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => FullBody(),
+                          ));
+                    },
+                    child: Card(
+                      margin: EdgeInsets.fromLTRB(40, 30, 0, 0),
+                      color: Colors.green,
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/fullbody.jpg',
+                              width: 100,
+                              height: 100,
                             ),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => FullBody(),
-                                ));
-                          },
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Text(
+                                'Full Body',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
-                Card(
-                  margin: EdgeInsets.fromLTRB(35, 30, 40, 0),
-                  color: Colors.green,
-                  child: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Column(
-                      children: <Widget>[
-                        Image.asset(
-                          'assets/armworkout.png',
-                          width: 100,
-                          height: 100,
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        FlatButton(
-                          child: Text(
-                            'Arm Workout',
-                            style: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Arm(),
+                          ));
+                    },
+                    child: Card(
+                      margin: EdgeInsets.fromLTRB(35, 30, 40, 0),
+                      color: Colors.green,
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/armworkout.png',
+                              width: 100,
+                              height: 100,
                             ),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Arm(),
-                                ));
-                          },
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Text(
+                                'Arm Workout',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  margin: EdgeInsets.fromLTRB(40, 30, 0, 0),
-                  color: Colors.green,
-                  child: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Column(
-                      children: <Widget>[
-                        Image.asset(
-                          'assets/legworkout.jpg',
-                          width: 100,
-                          height: 100,
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        FlatButton(
-                          child: Text(
-                            'Leg Workout',
-                            style: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                              color: Colors.white,
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Leg(),
+                          ));
+                    },
+                    child: Card(
+                      margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                      color: Colors.green,
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              'assets/legworkout.jpg',
+                              width: 100,
+                              height: 100,
                             ),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Leg(),
-                                ));
-                          },
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              child: Text(
+                                'Leg Workout',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),

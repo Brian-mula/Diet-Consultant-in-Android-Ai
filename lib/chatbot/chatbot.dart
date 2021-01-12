@@ -35,7 +35,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Chat bot",
+          "Dyet-bot",
         ),
       ),
       body: Container(
