@@ -29,7 +29,7 @@ class _UBreakfast1State extends State<UBreakfast1> {
         children: <Widget>[
           Material(
             // with Material
-            child: Image.asset('assets/eggsandwich.png'),
+            child: Image.asset('assets/eggsandwich.png',height: 50,width: 50,),
             elevation: 25.0,
             shape: CircleBorder(),
             clipBehavior: Clip.antiAlias,

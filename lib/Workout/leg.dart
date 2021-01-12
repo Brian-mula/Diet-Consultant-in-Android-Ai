@@ -68,94 +68,104 @@ class _LegState extends State<Leg> {
       body: SafeArea(
         child: ListView(
           children: <Widget>[
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("High Knees",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL1, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/high_knees.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("High Knees",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL1, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/high_knees.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Burpees",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL2, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/burpees.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Burpees",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL2, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/burpees.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Pile Squat",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL3, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/squat.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Pile Squat",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL3, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/squat.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Calf Raise",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL4, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/calf_raise.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Calf Raise",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL4, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/calf_raise.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Split Squat",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL5, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/split_squat.png',width: 380,height: 300,)),
-                      ],
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Split Squat",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL5, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/split_squat.png',width: 380,height: 300,)),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),

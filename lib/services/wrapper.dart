@@ -1,3 +1,4 @@
+import 'package:dyet/Screens/introscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:dyet/Screens/homepage.dart';
 import 'package:dyet/Screens/dashboard.dart';
@@ -11,7 +12,7 @@ class Wrapper extends StatelessWidget {
     print(user);
     //return either Homepage or Dashboard
     if (user == null) {
-      return HomePage();
+      return IntroScreen();
     } else {
       return Dashboard();
     }
