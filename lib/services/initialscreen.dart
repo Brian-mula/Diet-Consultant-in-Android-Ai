@@ -1,3 +1,4 @@
+import 'package:dyet/Screens/introscreen.dart';
 import 'package:dyet/services/wrapper.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -20,7 +21,7 @@ class _InitialScreenState extends State<InitialScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => Wrapper(),
+            builder: (context) => IntroScreen(),
           ),
         );
       },
