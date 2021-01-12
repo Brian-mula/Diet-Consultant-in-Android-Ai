@@ -74,6 +74,12 @@ class _OverWeightState extends State<OverWeight> {
                               'assets/masoor.jpeg', 'Diet 2', '\ Veg/Non-Veg'),
                           _buildFoodItem(
                               'assets/pumpkin.jpeg', 'Diet 3', '\ Veg/Non-Veg'),
+                          _buildFoodItem(
+                              'assets/paratha.jpeg', 'Diet 4', '\ Veg/Non-Veg'),
+                          _buildFoodItem(
+                              'assets/papaya.jpeg', 'Diet 5', '\ Veg/Non-Veg'),
+                          _buildFoodItem(
+                              'assets/pomojuice.jpeg', 'Diet 6', '\ Veg/Non-Veg'),
                         ]))),
               ],
             ),

@@ -68,113 +68,125 @@ class _ArmState extends State<Arm> {
       body: SafeArea(
         child: ListView(
           children: <Widget>[
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Side Plank Left",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL1, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/side_plank_left.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Side Plank Left",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL1, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/side_plank_left.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Side Plank Right",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL1, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/side_plank_right.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Side Plank Right",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL1, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/side_plank_right.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Push Ups",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL2, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/pushups.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Push Ups",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL2, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/pushups.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Punches",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL3, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/puches.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Punches",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL3, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/puches.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Arm Circules",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL4, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/arm_circles.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Arm Circules",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL4, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/arm_circles.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4 ,top: 10),
-                    child: Column(
-                      children: <Widget>[
-                        Center(child: Text("Side Arm Raise",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
-                        FlatButton.icon(onPressed: _launchURL5, icon: Icon(Icons.video_call), label: Text("Watch")),
-                        SizedBox(height: 30,),
-                        Center(child: Image.asset('assets/side_arm_raise.png',width: 380,height: 300,)),
+            FittedBox(
+              child: Row(
+                children: <Widget>[
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 4 ,top: 10),
+                      child: Column(
+                        children: <Widget>[
+                          Center(child: Text("Side Arm Raise",textAlign: TextAlign.center,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                          FlatButton.icon(onPressed: _launchURL5, icon: Icon(Icons.video_call), label: Text("Watch")),
+                          SizedBox(height: 30,),
+                          Center(child: Image.asset('assets/side_arm_raise.png',width: 380,height: 300,)),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),

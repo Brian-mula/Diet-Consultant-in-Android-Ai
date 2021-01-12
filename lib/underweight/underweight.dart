@@ -74,6 +74,12 @@ class _UnderWeightState extends State<UnderWeight> {
                               'assets/thali.jpeg', 'Diet 2', '\ Veg/Non-Veg'),
                           _buildFoodItem(
                               'assets/chickencurry.jpeg', 'Diet 3', '\ Veg/Non-Veg'),
+                          _buildFoodItem(
+                              'assets/appleshake.jpeg', 'Diet 4', '\ Veg/Non-Veg'),
+                          _buildFoodItem(
+                              'assets/curdchapati.jpeg', 'Diet 5', '\ Veg/Non-Veg'),
+                          _buildFoodItem(
+                              'assets/bananashake.jpeg', 'Diet 6', '\ Veg/Non-Veg'),
                         ]))),
               ],
             ),
