@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1038430842098-lcbdjkbes118nkketbusgm42pcitoldf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aditya.dyet",
+            "certificate_hash": "ce8e94bd574d7f4c75af80f5c62142f180d5ee37"
+          }
+        },
+        {
           "client_id": "1038430842098-bgu8hdquh85bluatclq8qn15cg47fvf4.apps.googleusercontent.com",
           "client_type": 3
         }

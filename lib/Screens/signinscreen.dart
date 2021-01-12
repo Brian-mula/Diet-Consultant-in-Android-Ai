@@ -1,8 +1,12 @@
 import 'package:dyet/authentication/auth.dart';
 import 'package:dyet/shared/constant_decoration.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:dyet/Screens/dashboard.dart';
 import 'package:dyet/services/loadingscreen.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+import '../authentication/user.dart';
 
 
 class SignIn extends StatefulWidget {
@@ -12,13 +16,36 @@ class SignIn extends StatefulWidget {
 
 class _SignInState extends State<SignIn> {
   final AuthService _auth = AuthService();
+  final FirebaseAuth auth = FirebaseAuth.instance;
   final _formkey = GlobalKey<FormState>();
+  GoogleSignIn googleSignIn = GoogleSignIn();
   // text field state
   String email = '';
   String password = '';
   String error = '';
   bool loading = false;
-  @override
+
+  Future  googleSignin() async {
+    try {
+      final GoogleSignInAccount googleUser = await googleSignIn.signIn();
+      final GoogleSignInAuthentication googleAuth = await googleUser
+          .authentication;
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken, idToken: googleAuth.idToken,);
+      final result = await auth.signInWithCredential(credential);
+      if(result !=null){
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => Dashboard(),
+            ));
+      }
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
+    @override
   Widget build(BuildContext context) {
     return loading
         ? Loading()
@@ -151,6 +178,16 @@ class _SignInState extends State<SignIn> {
                                       //     MaterialPageRoute(
                                       //       builder: (context) => Dashboard(),
                                       //     ));
+                                    },
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  RaisedButton(
+                                  color: Colors.blue,
+                                    child: Text('Sign In With Google'),
+                                    onPressed: (){
+                                     googleSignin();
                                     },
                                   ),
                                 ],

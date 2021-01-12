@@ -10,13 +10,18 @@ import 'package:dyet/chatbot/chatbot.dart';
 import 'package:dyet/services/wrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return StreamProvider<User>.value(
+    return StreamProvider<User1>.value(
       value: AuthService().user,
       child: MaterialApp(
         title: 'Dyet',
