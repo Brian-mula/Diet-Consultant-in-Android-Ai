@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "edi-chatbot-eqel",
+  "private_key_id": "c4bc1b9c63a8adda238ce301078f90a9d171bba0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8kKir8wCOYBIy\n8g3852BV4hpn6vX+t7kUXaDK+F8q+3SDOe1gB1whsWYuOx7tH3EFAraYVA1b8EGg\nkRYq4AgIjKkM7pZ1dYm4PGLg+hYNlVS4KkSFP3RBIljAz/QWk7c5hnYuvOqWQK3j\nGgRI4yaUHs+wJCVeZyn3IKJ2yenrIqXlFKZy3F2w+6csbg0FZxqV/nG+TRqKielO\nfH22h6L02WM1gB9YKl5uVl6ReSPAUcmgYAQRYFhgt2ljoHuvc1POdjyViQrWHG8I\nKOGaGrVx/rdjtdbFxye2goBolChJUEijZXjq8KC2HGwZW220BA7eBmBNL2iMo3kY\niikHoAUXAgMBAAECggEALomrP0jJfdoDE9S+lAjMs1WKu9P242cXhAm5ie5zmmmV\n718oERev6tbcB5PqxY4JeDmbtAumgmbQ4557MJi7EtUYUcs+kf2wwCoTI0BFmhOd\nZZh08cff2sVtzyRjswDA6y8e0tkoMm4DHHYK0axSFKNoEapSGLLwXgANaLDbjP7D\nCyujBWKYgSpPJ4OLsecR+8CYL3zG5B0tiQJb59/+/QxpmkJOaYOLDQag8mj4FRar\n4D+lrhKWcD8LJGTUi8fO7bwMoZILaZMHKRogx/ERemwUXOYuE91FX+lUPXxjvL7F\nY/aQwFYEv5IeuHu/V5KTKXhK3MTFT/qYe1FZrD7LXQKBgQDmusP6yLQF1tAPi2kp\njFQk8ENoxKYOE6KqeX63CTZKNgPkaH/mYtA7R/I2AeJ87+xinOKK/IPe+pmZ3oTH\n5Pz2OnfZ5ROWkwlxtJhVsGxDZLcfd84x+zRZrfYnvHgqE9jJzr20pRM56IHeV8fF\nxhW5MUktIfHBzt3KD6DxeHBH0wKBgQDRN62xZtmMXQSo6Elg1aTr5oja9rWQd3C6\nRlMwnSjYt5AXAIlI8GIMyu4MChHsXddmUYjan0Z+ZylNlgcy6iat5LrB2XsImCe8\nTC01M47hCqK1CUuuWa/iRAxM6l1C+AJImjScde+uTUsQYsVxmtKeAVRIZn8WnwFW\nd1VZkBznLQKBgQCS7qb1YrC58zVmYMpkihffuh3Db0+sMTbqxxo556TqF4HdB+tD\nRPQEfGmzmPmpxIRNvEjMZ8h2zDHa+gim3510FIHUgfw6bIKcJXzJPOOE+3Nel8X4\nsFeDMLRMU8pWSXNJ+N14V5Np0jY56L6wpNeaqtdF5ZL2cA1vqwo8HA2svwKBgBZS\n+5yvXc1Fa6beSl4jzdpCGh5LLuqAZC3sLRpF2sLtK1nY+80loUC+MpJkTK9NABvx\n3Ul+r1Xzigu2U4RSSdhKTMc8fo1XNv43nqdLnhZTPTNWD5ZGCad6HVnjtBnePtgi\nZDTBvNZ7duQDtg++NnUXrTeggDUYuFrSlu/cmcjtAoGAVF6vyzCjVdx6K3dt+gl8\nKPVzwFYmbAKagb+RTQZZ63Xh+Ti0gVx08y2ar7PcOiEXWYh6bXgQeRSWXQNzAAxP\nuX+CGEgm1FrTfE71kTDpeqTcK3LJv3nXBWYXhpqsUfEWw6rLReKNmSb6AHO7APRR\nEydM0gadUf53S4X+3dCr+GU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "edi-bot@edi-chatbot-eqel.iam.gserviceaccount.com",
+  "client_id": "116494902681091184802",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/edi-bot%40edi-chatbot-eqel.iam.gserviceaccount.com"
+}

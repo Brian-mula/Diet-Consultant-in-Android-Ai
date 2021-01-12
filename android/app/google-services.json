@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1038430842098",
+    "firebase_url": "https://dyet-6b36d.firebaseio.com",
+    "project_id": "dyet-6b36d",
+    "storage_bucket": "dyet-6b36d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038430842098:android:3b3c5825cb13ab0610f46b",
+        "android_client_info": {
+          "package_name": "aditya.dyet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038430842098-bgu8hdquh85bluatclq8qn15cg47fvf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHUBpUmKRi9sBIyAkklVZzijBOi7QPLGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038430842098-bgu8hdquh85bluatclq8qn15cg47fvf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
