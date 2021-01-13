@@ -8,7 +8,6 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 import '../authentication/user.dart';
 
-
 class SignIn extends StatefulWidget {
   @override
   _SignInState createState() => _SignInState();
@@ -25,15 +24,22 @@ class _SignInState extends State<SignIn> {
   String error = '';
   bool loading = false;
 
-  Future  googleSignin() async {
+  Future<UserCredential> gSignIn() async {
     try {
+      print("Calling GoogleSignin");
       final GoogleSignInAccount googleUser = await googleSignIn.signIn();
-      final GoogleSignInAuthentication googleAuth = await googleUser
-          .authentication;
-      final AuthCredential credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth.accessToken, idToken: googleAuth.idToken,);
+      print("GoogleSignin works");
+      final GoogleSignInAuthentication googleAuth =
+          await googleUser.authentication;
+      print("GoogleSigninAuth works");
+      final GoogleAuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
+      print("GoogleAuthCredential works");
       final result = await auth.signInWithCredential(credential);
-      if(result !=null){
+      print("data sending works");
+      if (result != null) {
         Navigator.push(
             context,
             MaterialPageRoute(
@@ -45,7 +51,7 @@ class _SignInState extends State<SignIn> {
     }
   }
 
-    @override
+  @override
   Widget build(BuildContext context) {
     return loading
         ? Loading()
@@ -161,14 +167,14 @@ class _SignInState extends State<SignIn> {
                                             error =
                                                 'Could Not Sign In with those Credentials';
                                           });
-                                        }else
-                                          {
-                                            Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                  builder: (context) => Dashboard(),
-                                                ));
-                                          }
+                                        } else {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    Dashboard(),
+                                              ));
+                                        }
                                       }
                                       setState(() {
                                         loading = false;
@@ -184,10 +190,10 @@ class _SignInState extends State<SignIn> {
                                     height: 10,
                                   ),
                                   RaisedButton(
-                                  color: Colors.blue,
+                                    color: Colors.blue,
                                     child: Text('Sign In With Google'),
-                                    onPressed: (){
-                                     googleSignin();
+                                    onPressed: () {
+                                      gSignIn();
                                     },
                                   ),
                                 ],
